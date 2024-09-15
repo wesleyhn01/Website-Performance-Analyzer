@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Website Performance Analyzer",
+  "version": "1.0",
+  "description": "A lightweight extension for analyzing website performance using PageSpeed Insights",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://www.googleapis.com;"
+  }
+}

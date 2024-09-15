@@ -1,0 +1,344 @@
+body {
+  width: 350px;
+  padding: 10px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333333;
+  min-height: 300px;
+}
+
+/* Styles for the initial view */
+body.initial-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Set a fixed height for the initial view */
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.score {
+  text-align: center;
+  flex: 1;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: #ffffffb3;
+  margin: 0 2px;
+}
+
+.score-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 2px;
+  color: #666666;
+}
+
+.score-value {
+  font-size: 19px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.score-value[data-score="90"],
+.score-value[data-score="91"],
+.score-value[data-score="92"],
+.score-value[data-score="93"],
+.score-value[data-score="94"],
+.score-value[data-score="95"],
+.score-value[data-score="96"],
+.score-value[data-score="97"],
+.score-value[data-score="98"],
+.score-value[data-score="99"],
+.score-value[data-score="100"] {
+  color: #4ade80;
+}
+
+.score-value[data-score="50"],
+.score-value[data-score="51"],
+.score-value[data-score="52"],
+.score-value[data-score="53"],
+.score-value[data-score="54"],
+.score-value[data-score="55"],
+.score-value[data-score="56"],
+.score-value[data-score="57"],
+.score-value[data-score="58"],
+.score-value[data-score="59"],
+.score-value[data-score="60"],
+.score-value[data-score="61"],
+.score-value[data-score="62"],
+.score-value[data-score="63"],
+.score-value[data-score="64"],
+.score-value[data-score="65"],
+.score-value[data-score="66"],
+.score-value[data-score="67"],
+.score-value[data-score="68"],
+.score-value[data-score="69"],
+.score-value[data-score="70"],
+.score-value[data-score="71"],
+.score-value[data-score="72"],
+.score-value[data-score="73"],
+.score-value[data-score="74"],
+.score-value[data-score="75"],
+.score-value[data-score="76"],
+.score-value[data-score="77"],
+.score-value[data-score="78"],
+.score-value[data-score="79"],
+.score-value[data-score="80"],
+.score-value[data-score="81"],
+.score-value[data-score="82"],
+.score-value[data-score="83"],
+.score-value[data-score="84"],
+.score-value[data-score="85"],
+.score-value[data-score="86"],
+.score-value[data-score="87"],
+.score-value[data-score="88"],
+.score-value[data-score="89"] {
+  color: #facc15;
+}
+
+.score-value[data-score="0"],
+.score-value[data-score="1"],
+.score-value[data-score="2"],
+.score-value[data-score="3"],
+.score-value[data-score="4"],
+.score-value[data-score="5"],
+.score-value[data-score="6"],
+.score-value[data-score="7"],
+.score-value[data-score="8"],
+.score-value[data-score="9"],
+.score-value[data-score="10"],
+.score-value[data-score="11"],
+.score-value[data-score="12"],
+.score-value[data-score="13"],
+.score-value[data-score="14"],
+.score-value[data-score="15"],
+.score-value[data-score="16"],
+.score-value[data-score="17"],
+.score-value[data-score="18"],
+.score-value[data-score="19"],
+.score-value[data-score="20"],
+.score-value[data-score="21"],
+.score-value[data-score="22"],
+.score-value[data-score="23"],
+.score-value[data-score="24"],
+.score-value[data-score="25"],
+.score-value[data-score="26"],
+.score-value[data-score="27"],
+.score-value[data-score="28"],
+.score-value[data-score="29"],
+.score-value[data-score="30"],
+.score-value[data-score="31"],
+.score-value[data-score="32"],
+.score-value[data-score="33"],
+.score-value[data-score="34"],
+.score-value[data-score="35"],
+.score-value[data-score="36"],
+.score-value[data-score="37"],
+.score-value[data-score="38"],
+.score-value[data-score="39"],
+.score-value[data-score="40"],
+.score-value[data-score="41"],
+.score-value[data-score="42"],
+.score-value[data-score="43"],
+.score-value[data-score="44"],
+.score-value[data-score="45"],
+.score-value[data-score="46"],
+.score-value[data-score="47"],
+.score-value[data-score="48"],
+.score-value[data-score="49"] {
+  color: #f87171;
+}
+
+.timestamp {
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+  margin: 5px 0 10px;
+  padding: 5px;
+  background-color: #ffffffb3;
+  border-radius: 4px;
+}
+
+.metrics {
+  margin-top: 20px;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #ffffffb3;
+  border-radius: 3px;
+}
+
+.metric-name {
+  font-weight: bold;
+  color: #666666;
+}
+
+#tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #ffffffb3;
+  cursor: pointer;
+  color: #333333;
+}
+
+.tab.active {
+  background-color: #ffffffcc;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+}
+
+.opportunity {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #ffffffb3;
+  border-radius: 5px;
+}
+
+.opportunity strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.opportunity p {
+  color: #666666;
+}
+
+.psi-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.psi-link a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.psi-link a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.psi-button, .reanalyze-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: auto;
+  min-width: 140px;
+  text-align: center;
+}
+
+.psi-button {
+  background-color: #4285f4;
+  color: white;
+}
+
+.reanalyze-button {
+  background-color: #4ade80;
+  color: white;
+}
+
+.psi-button:hover, .reanalyze-button:hover {
+  opacity: 0.9;
+}
+
+.metric-name a {
+  color: #4285f4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.metric-name a:hover {
+  color: #3367d6;
+  text-decoration: underline;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  max-width: 250px;
+}
+
+#analyzeButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4ade80;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#analyzeButton:hover {
+  opacity: 0.9;
+}
+
+#buttonContainer p {
+  margin: 0;
+  font-size: 14px;
+  color: #666666;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

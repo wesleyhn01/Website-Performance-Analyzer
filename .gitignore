@@ -1,0 +1,58 @@
+# Ignore all files by default
+*
+
+# But allow specific file types and directories
+!*/
+!*.ts
+!*.tsx
+!*.json
+!*.md
+!*.yml
+!*.yaml
+!*.html
+!*.css
+!*.scss
+!*.svg
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!.gitignore
+
+# Ignore node modules
+node_modules/
+
+# Ignore build and distribution directories
+dist/
+build/
+out/
+
+# Ignore environment and configuration files
+.env*
+config.ts
+*.config.js
+
+# Ignore log files
+*.log
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# Ignore package manager files
+yarn-error.log
+npm-debug.log
+
+# Ignore test coverage output
+coverage/
+
+# Ignore temporary files
+*.tmp
+*.temp
